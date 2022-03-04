@@ -11,7 +11,11 @@
 .margin-b{
     margin-bottom: 30px;
 }
-  
+.clearfix:after{
+    clear: both;
+    content: "";
+    display: table;
+}
 /* Containet */
 .container{
     max-width: 1800px;
@@ -41,15 +45,22 @@ header{
 }
 .side{
     width: 20%;
+    
 }
 .middle{
     /* width: calc(60%-var(--content-margin); */
-    width: 60%;
+    width: calc(60% - var(--margin-content)*2);
     margin: 0 var(--margin-content);
 }
 .collomn{
+    float: left;
     padding: 10px;    
 }
+
+
+
+
+
 /* FOOTER  */
 footer{
     background-color: blueviolet;
