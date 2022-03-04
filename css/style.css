@@ -8,6 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-family: sans-serif;
+}
 .margin-b{
     margin-bottom: 30px;
 }
@@ -23,13 +26,14 @@
     margin: 2em auto;
 }
 /* HEADER */
-header{
-    background-color: palevioletred;
-    height: 100px;
-}
+/* header{
+Al momento non ho bisogno
+    
+} */
 /* MAIN */
 .jumbotron{
     background-color: sandybrown;
+    border-radius: 20px;
     height: 400px;
 }
 .content{
@@ -56,13 +60,45 @@ header{
     float: left;
     padding: 10px;    
 }
-
-
-
-
-
 /* FOOTER  */
 footer{
     background-color: blueviolet;
     height: 80px;
+}
+
+/* Sistemazione pagina */
+
+
+header a span, header a img{
+    font-size: 2.5em;
+    /* font-weight: bold;*/
+    color: black;
+    vertical-align: middle;
+}
+header a span{
+    padding: 0 0.3em;
+}
+header a{
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1em;
+
+}
+#icon{
+    
+    border-right: 1px solid gray ;
+
+}
+/* NAV  */
+nav div{
+    font-size: 1.5em;
+    height: 2em;
+    padding-right: 2em;
+    float: left;
+
+}
+nav a{
+    color:gray;
+    line-height: 2em;
+    margin: 0;
 }
